@@ -1,66 +1,218 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Nvmz.github.com by nzmv</title>
+    <title>Iglesia del Nazareno Mount Vernon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-image:url('img/nazarene.jpg');
+        background-repeat:no-repeat;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 54px;
+        line-height: 1;
+        font-family:'Cinzel', serif;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+      h2 {
+                font-family:'Cinzel', serif;
+                        text-align: center;
+
+margin-top: 20px;
+      }
+
+     .calendario-list li {
+        list-style-type: none;
+        text-align: center;
+        font-size: 20px;
+        font-family:'Cinzel', serif;
+
+      }
+
+     .calendario-list > li > h3 {
+        font-family:'Cinzel', serif;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+
+     }
+
+     .footer {
+      border-top: 1px solid black;
+     }
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/ico/favicon.png">
+
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+  <style>
+    #map { height: 100px; width:100%; margin-bottom: 20px;}
+    </style>
+
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Nvmz.github.com</h1>
-        <p>Pagina Web Nazarenos</p>
 
-        <p class="view"><a href="https://github.com/nzmv/nvmz.github.com">View the Project on GitHub <small>nzmv/nvmz.github.com</small></a></p>
+    <div class="container-narrow">
 
-
-        <ul>
-          <li><a href="https://github.com/nzmv/nvmz.github.com/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/nzmv/nvmz.github.com/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/nzmv/nvmz.github.com">View On <strong>GitHub</strong></a></li>
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#calendario">Calendario</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+      </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+      <hr>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+      <div class="jumbotron">
+        <h1>IGLESIA DEL NAZARENO<br>Mount Vernon</h1>
+        <p class="lead">3220 Holly Hill Rd. Alexandria, VA 22306</p>
+         <div id='map' ></div>
+        <a class="btn btn-large btn-success" href="#">Todos los Domingos a las 11:00 a.m.</a>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+      </div>
 
-<h3>Designer Templates</h3>
+      <div class="row-fluid marketing">
+       <div class="span5">
+          <img src="img/pastores.png" />
+          <p>Pastores Nelson y Laura Villatoro</p>
+        </div>
+        <div class="span7">
+          <h4>Una Iglesia Amigable</h4>
+          <p>Para hispanos, con el calor y amor que caracteriza a nuestro pueblo latino. </p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <h4>Sana Doctrina</h4>
+          <p>La iglesia del Nazareno es una iglesia cristiana protestante de denominación Wesleyana. <a href="http://nazarene.org/ministries/gensec/ArticlesofFaith/Spanish/display.html" target="_blank">Ver artículos de fe.</a></p>
 
-<h3>Rather Drive Stick?</h3>
+          <h4>Seamos como Cristo</h4>
+          <p>Nuestro método se basa en Ganar almas para el señor, Cuidarlas, Discipularlas y Enviarlas a evangelizar.</p>
+        </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+      <div class="span12">
 
-<h3>Authors and Contributors</h3>
+      <h2 id="calendario">Calendario</h2>
+      <ul class="calendario-list">
+        <li>
+          <h3>Domingo - Diciembre 16</h3>
+          <dl class="dl-horizontal">
+          <dt>9:30 a.m.</dt>
+          <dd>Oración</dd>    
+          <dt>10:00 a.m.</dt>
+          <dd>Escuela Dominical</dd>
+          <dt>11:00 a.m.</dt>
+          <dd>Servicio de Oración</dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Jueves - Diciembre 20</h3>
+          <dl class="dl-horizontal">
+          <dt>7:00 p.m.</dt>
+          <dd>Servicio de Oración</dd>
+          </dl>
+        </li>
+      </ul>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+     <div class="span12">
 
-<h3>Support or Contact</h3>
+      <h2 id="contacto">Contacto</h2>
+      <p>Iglesia del Nazareno Mount Vernon
+3220 Holly Hill Rd.
+Alexandria, VA 22306
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/nzmv">nzmv</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<ul>
+  <li>703-765-0895 Casa Pastoral</li>
+  <li>info@mtvernonnazarenos.org</li>
+  <li>pastornelson@mtvernonnazarenos.org</li>
+  <li>pastoralaura@mtvernonnazarenos.org</li>
+</ul>
+      <p>Si desea acompañarnos en el servicio del domingo, pero no tiene transporte, llamenos al (240) 505-9248 antes de las 8:00 a.m. y con gusto enviaremos por usted a un hermano en la van de la iglesia.</p>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+
+      <div class="footer">
+        <p>Copyright &copy; 2012. Iglesia Mount Vernon,VA. All Rights Reserved.</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
+
+<script>
+  var map = mapbox.map('map');
+  map.addLayer(mapbox.layer().id('ingenieroariel.map-q7yj53lf'));
+    var markerLayer = mapbox.markers.layer();
+
+  // Add interaction to this marker layer. This
+  // binds tooltips to each marker that has title
+  // and description defined.
+  mapbox.markers.interaction(markerLayer);
+  map.addLayer(markerLayer);
+    // Add a single feature to the markers layer.
+  // You can use .features() to add multiple features.
+  markerLayer.add_feature({
+      geometry: {
+          coordinates: [-77, 37.9]
+      },
+      properties: {
+          'marker-color': '#000',
+          'marker-symbol': 'religious-christian',
+          title: 'Example Marker',
+          description: 'This is a single marker.'
+      }
+  });
+  map.zoom(6).center({ lat: 38, lon: -77 });
+</script>
   </body>
 </html>
